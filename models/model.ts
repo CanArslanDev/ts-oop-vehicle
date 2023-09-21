@@ -8,8 +8,8 @@ export class Model {
         this.vehicles.push(vehicle);
     }
 
-    listVehicles(): string[] {
-        return this.vehicles.map((vehicle) => `${vehicle.getBrand()} ${vehicle.getModel()}`);
+    listVehicles(): Vehicle[] {
+        return this.vehicles.map((vehicle) => vehicle);
     }
 
     getVehicleByBrand(brand: string): Vehicle | undefined {

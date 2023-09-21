@@ -16,7 +16,7 @@ export class Controller {
         return vehicle;
     }
 
-    listVehicles(): string[] {
+    listVehicles(): Vehicle[] {
         return this.model.listVehicles();
     }
 

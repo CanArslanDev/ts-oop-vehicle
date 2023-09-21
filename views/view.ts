@@ -72,7 +72,7 @@ export class View {
             console.log('No vehicles available.');
         } else {
             console.log('List of vehicles:');
-            vehicles.forEach((vehicle) => console.log(vehicle));
+            vehicles.forEach((vehicle) => console.log(`Model: ${vehicle.getModel()}, Brand: ${vehicle.getBrand()}, Age: ${vehicle.getAge()}, Wheels: ${vehicle.getWheelCount()}`));
         }
         this.showMenu();
     }
